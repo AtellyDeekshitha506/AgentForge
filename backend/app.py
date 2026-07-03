@@ -7,7 +7,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://agent-forge-delta-five.vercel.app",
+        "https://agent-forge-qwfpreimv-deekshitha44.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
